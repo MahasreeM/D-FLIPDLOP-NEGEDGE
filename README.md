@@ -1,3 +1,6 @@
+# REG.NO: 212224110035
+# NAME: MAHA SHREE.M
+
 # D-FLIPDLOP-NEGEDGE
 
 **AIM:**
@@ -32,13 +35,27 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
-
+/* Program for flipflops and verify its truth table in quartus using Verilog programming.
+```
+module dflip(D,Clock,reset,Q);
+input D,reset,Clock;
+output reg Q;
+always @ (negedge Clock)
+if(!reset)
+Q <= 0;
+else
+Q <= D;
+endmodule
+```
 **RTL LOGIC FOR FLIPFLOPS**
+
+![Screenshot 2025-04-23 094753](https://github.com/user-attachments/assets/17917b04-3835-443c-b2a8-d0be0a43643e)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
+![Screenshot 2025-04-23 094812](https://github.com/user-attachments/assets/54c98326-09db-412d-b085-907b6c8ec0d6)
 
 **RESULTS**
+
+Thus the implemented D-flipflop was successfully verified.
